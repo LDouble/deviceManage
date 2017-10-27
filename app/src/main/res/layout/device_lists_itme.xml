@@ -2,15 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:id="@+id/device_name"/>
+        android:id="@+id/device_name"
+        android:textSize="15dp"
+        android:maxLines="1"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/device_status"
+        android:textSize="15dp"
         />
 </LinearLayout>

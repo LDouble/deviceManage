@@ -1,19 +1,30 @@
 package com.it592.devicemanage.Beans;
 
-import java.util.Date;
+import java.io.Serializable;
+
 
 import cn.bmob.v3.BmobObject;
+import cn.bmob.v3.datatype.BmobDate;
 
 /**
  * Created by doublel on 17-10-7.
  */
 
-public class DeviceBean extends BmobObject {
+public class DeviceBean extends BmobObject implements Serializable {
     private boolean status; //是否借出
-    private String last_lend;
+    private UserBean last_lend;
     private String device_name;
-    private Date buy_time;
-    private String add_user;
+    private BmobDate buy_time;
+    private UserBean add_user;
+    private String note;
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
 
     public String getAddress() {
         return address;
@@ -33,11 +44,11 @@ public class DeviceBean extends BmobObject {
         this.status = status;
     }
 
-    public String getLast_lend() {
+    public UserBean getLast_lend() {
         return last_lend;
     }
 
-    public void setLast_lend(String last_lend) {
+    public void setLast_lend(UserBean last_lend) {
         this.last_lend = last_lend;
     }
 
@@ -49,19 +60,19 @@ public class DeviceBean extends BmobObject {
         this.device_name = device_name;
     }
 
-    public Date getBuy_time() {
+    public BmobDate getBuy_time() {
         return buy_time;
     }
 
-    public void setBuy_time(Date buy_time) {
+    public void setBuy_time(BmobDate buy_time) {
         this.buy_time = buy_time;
     }
 
-    public String getAdd_user() {
+    public UserBean getAdd_user() {
         return add_user;
     }
 
-    public void setAdd_user(String add_user) {
+    public void setAdd_user(UserBean add_user) {
         this.add_user = add_user;
     }
 }
