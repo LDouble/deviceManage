@@ -19,7 +19,7 @@
 ## 第三方包
 1. [android-zxingLibrary](https://github.com/yipianfengye/android-zxingLibrary)
 2. [Bmob Android SDK](https://github.com/bmob/bmob-android-sdk)
-3. 
+
 ## 页面示例
 ### 首页
 ![](./img/1.jpg)
