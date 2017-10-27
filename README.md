@@ -14,14 +14,23 @@
 > 打印功能，该功能依赖于打印机的SDK
 
 > ......
-
-页面示例
+## 第三方包
+1. [android-zxingLibrary] (https://github.com/yipianfengye/android-zxingLibrary)
+2. 
+##页面示例
+### 首页
 ![](./img/1.jpg)
+### 设备列表
 ![](./img/2.jpg)
+### 添加设备
 ![](./img/3.jpg)
+### 设备详情
 ![](./img/4.jpg)
+### 二维码扫描
 ![](./img/5.jpg)
+### 侧栏
 ![](./img/6.jpg)
+### 使用记录
 ![](./img/7.jpg)
 
 
