@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.it592.devicemanage.Adapter.DeviceAdapter;
 import com.it592.devicemanage.AddDeviceActivity;
 import com.it592.devicemanage.Beans.DeviceBean;
+import com.it592.devicemanage.Beans.UserBean;
 import com.it592.devicemanage.MainActivity;
 import com.it592.devicemanage.R;
 import com.lcodecore.tkrefreshlayout.RefreshListenerAdapter;
@@ -34,6 +35,7 @@ import java.util.Date;
 import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.datatype.BmobDate;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
@@ -54,7 +56,7 @@ public class deviceFragment extends Fragment {
     private int curPage = 0; // 当前页的编号，从0开始
     private String lastTime = null;
     UpdateReceiver updateReceiver;
-
+    UserBean userBean;
     public deviceFragment() {
         // Required empty public constructor
     }
@@ -90,6 +92,7 @@ public class deviceFragment extends Fragment {
 
             }
         });
+        userBean = BmobUser.getCurrentUser(UserBean.class);
         swipeRefreshLayout.startRefresh();
         recyclerView = (RecyclerView)view.findViewById(R.id.device_lists);
         deviceAdapter = new DeviceAdapter(getContext(),deviceBeanList);
@@ -110,6 +113,7 @@ public class deviceFragment extends Fragment {
         BmobQuery<DeviceBean> query;
         query = new BmobQuery<DeviceBean>();
         query.order("-createdAt");
+        query.addWhereEqualTo("add_user",userBean);
         query.setLimit(limit);
         if(actionType == STATE_MORE){
             Date date = null;
