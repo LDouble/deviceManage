@@ -15,9 +15,9 @@
 
 > ......
 ## 第三方包
-1. [android-zxingLibrary] (https://github.com/yipianfengye/android-zxingLibrary)
+1. [android-zxingLibrary](https://github.com/yipianfengye/android-zxingLibrary)
 2. 
-##页面示例
+## 页面示例
 ### 首页
 ![](./img/1.jpg)
 ### 设备列表
