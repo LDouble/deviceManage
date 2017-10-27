@@ -3,6 +3,8 @@
 
 > 技术栈:Java
 
+> IDE:Android Studio
+
 ## 实现功能
 - [x] 用户注册、登录
 - [x] 设备添加、借还
@@ -16,7 +18,8 @@
 > ......
 ## 第三方包
 1. [android-zxingLibrary](https://github.com/yipianfengye/android-zxingLibrary)
-2. 
+2. [Bmob Android SDK](https://github.com/bmob/bmob-android-sdk)
+3. 
 ## 页面示例
 ### 首页
 ![](./img/1.jpg)
