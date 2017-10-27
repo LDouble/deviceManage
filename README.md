@@ -4,7 +4,8 @@
 > 技术栈:Java
 
 > IDE:Android Studio
-
+## App 下载
+[基础版](https://raw.githubusercontent.com/LDouble/deviceManager/master/app/app-release.apk)
 ## 实现功能
 - [x] 用户注册、登录
 - [x] 设备添加、借还
